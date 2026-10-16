@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Idea Vault</title>
+<meta name="apple-mobile-web-app-title" content="Idea Vault">
+<meta name="application-name" content="Idea Vault">
+<meta name="theme-color" content="#f6f4fa">
+<link rel="apple-touch-icon" href="/icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<script>
+  var VAULT = "https://claude.ai/artifact/GppuRvQmh1psp86LV65NW9";
+  var setup = /[?&]add\b/.test(location.search);
+  if (!setup) { location.replace(VAULT); }
+  else { history.replaceState(null, "", "/"); }
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap">
+<style>
+  :root{--bg:#f6f4fa;--card:#fff;--line:#e4e0ec;--fg:#231f29;--muted:#6f6879;--accent:#e0367f;--soft:#fde7f1}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Figtree,"Helvetica Neue",Arial,sans-serif}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px max(16px,env(safe-area-inset-right)) 32px max(16px,env(safe-area-inset-left))}
+  .card{width:100%;max-width:420px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 24px;display:flex;flex-direction:column;gap:20px;box-shadow:0 4px 20px rgba(35,31,41,.05)}
+  .top{display:flex;align-items:center;gap:14px}
+  .top img{width:60px;height:60px;border-radius:15px}
+  h1{margin:0;font-size:24px;font-weight:800;letter-spacing:-.01em}
+  .sub{margin:2px 0 0;color:var(--muted);font-size:15px}
+  ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+  li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.45}
+  li b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--soft);color:var(--accent);display:grid;place-items:center;font-size:14px}
+  .tip{background:var(--soft);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.45}
+  a.btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:14px;border-radius:999px}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="top">
+      <img src="/icon-180.png" alt="">
+      <div><h1>Idea Vault</h1><p class="sub">Add it to your home screen</p></div>
+    </div>
+    <ol>
+      <li><b>1</b><span>Tap the <strong>Share</strong> button at the bottom of Safari (the square with the arrow).</span></li>
+      <li><b>2</b><span>Scroll down and tap <strong>Add to Home Screen</strong>.</span></li>
+      <li><b>3</b><span>Turn <strong>Open as Web App</strong> off if you see it, then tap <strong>Add</strong>.</span></li>
+    </ol>
+    <div class="tip">Keeping "Open as Web App" off means it opens in Safari, where you're already signed in to Claude. With it on, you'd have to sign in again inside the app.</div>
+    <a class="btn" href="https://claude.ai/artifact/GppuRvQmh1psp86LV65NW9">Open my vault</a>
+  </main>
+</body>
+</html>
