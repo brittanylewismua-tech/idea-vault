@@ -1,1 +1,1 @@
-{"name":"Idea Vault","short_name":"Idea Vault","start_url":"/","display":"browser","background_color":"#f6f4fa","theme_color":"#f6f4fa","icons":[{"src":"/icon-180.png","sizes":"180x180","type":"image/png"}]}
+{"name":"Idea Vault","short_name":"Idea Vault","start_url":"./","display":"browser","background_color":"#f6f4fa","theme_color":"#f6f4fa","icons":[{"src":"icon-180.png","sizes":"180x180","type":"image/png"}]}

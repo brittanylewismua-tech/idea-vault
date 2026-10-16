@@ -7,14 +7,14 @@
 <meta name="apple-mobile-web-app-title" content="Idea Vault">
 <meta name="application-name" content="Idea Vault">
 <meta name="theme-color" content="#f6f4fa">
-<link rel="apple-touch-icon" href="/icon-180.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png">
-<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png">
+<link rel="manifest" href="manifest.webmanifest">
 <script>
   var VAULT = "https://claude.ai/artifact/GppuRvQmh1psp86LV65NW9";
   var setup = /[?&]add\b/.test(location.search);
   if (!setup) { location.replace(VAULT); }
-  else { history.replaceState(null, "", "/"); }
+  else { history.replaceState(null, "", location.pathname); }
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap">
 <style>
@@ -37,7 +37,7 @@
 <body>
   <main class="card">
     <div class="top">
-      <img src="/icon-180.png" alt="">
+      <img src="icon-180.png" alt="">
       <div><h1>Idea Vault</h1><p class="sub">Add it to your home screen</p></div>
     </div>
     <ol>
